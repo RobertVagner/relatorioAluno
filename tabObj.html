@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style type="text/css">
+            *{
+                font-family: Arial, Verdana, sans-serif;
+                color: #665544;}
+            body{
+                margin: auto;
+                width: 500px;
+            }
+            input {
+                border-bottom: 1px dotted #dcdcdc;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                padding: 5px;
+                width: 280px;
+                margin-bottom: 20px;}
+            #titulo {
+                background-color: #efefef;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 10px 20px;
+                text-align: center;
+                text-transform: uppercase;}
+            input#colocar {
+                color: #ffffff;
+                background-color: #665544;
+                border: none;
+                border-radius: 5px;
+                width: 80px;}
+            input#colocar:hover {
+                color: #665544;
+                background-color: #efefef;}
+
+            input#remove {
+                color: #ffffff;
+                background-color: #665544;
+                border: none;
+                border-radius: 5px;
+                width: 80px;}
+            input#remove:hover {
+                color: #665544;
+                background-color: #efefef;}
+
+            form {
+                width: 500px;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: left;}
+            table {
+                width: 540px;
+                border: 1px solid #dcdcdc;
+                border-radius: 10px;
+                padding: 20px;
+                text-align: left;}
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="titulo">Relatório do aluno</h1>
+        
+        <form>
+            <label>Nome</label> <input type="text" id="txNome" size=30> <br> <br>
+            <label>Curso</label> <input type="text" id="txCurso" size=30> <br> <br>
+            <label>Disciplina</label> <input type="text" id="txDisciplina" size=30> <br> <br>
+            <label>Nota 1</label> <input type="text" id="txNota1" size=5> <br> <br>
+            <label>Nota 2</label> <input type="text" id="txNota2" size=5>  <br> <br>
+            <label>Nota 3</label> <input type="text" id="txNota3" size=5>  <br> <br>
+            <input type="button" value="Inserir" id="colocar" onclick="cadastrarAluno()">
+            <input type="reset" value="Limpar" id="remove">
+
+        </form>
+        <table style="border: solid 2px; padding: 10px" id="tabAlunos">
+            <tr>
+                <th style="padding: 10px;">Nome</th>
+                <th style="padding: 10px;">Curso</th>
+                <th style="padding: 10px;">Disciplina</th>
+                <th style="padding: 10px;">Média</th>
+            </tr>
+        </table>
+        <script src="./js/exercicioObj_1.js"></script>
+    </body>
+</html>
